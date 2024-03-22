@@ -53,4 +53,8 @@ class PostController extends Controller
 
         return redirect()->route('index.posts');
     }
+
+    public function seach(){
+        return view('posts.seach');
+    }
 }
