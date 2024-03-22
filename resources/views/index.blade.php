@@ -1,3 +1,5 @@
+{{-- @dd($posts); --}}
+
 <x-layout>
     <h1>
         <span>Hello Laravel!</span>
