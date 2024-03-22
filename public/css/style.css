@@ -5,6 +5,7 @@ h1 {
     padding-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 li {
@@ -20,7 +21,7 @@ li {
     font-size: 14px;
 }
 
-h1 > a{
+h1 > a , h1 > div > a {
     font-size: 12px;
     background-color: aqua;
     border: 1px solid;
@@ -29,6 +30,10 @@ h1 > a{
     margin-left: auto;
     text-decoration: none;
 }
+
+.seach {
+    background-color: orange;
+ }
 
 input, textarea {
     width: 100%;
@@ -41,7 +46,6 @@ input, textarea {
     text-align: right;
 }
 
-/* ===以下CSSが効かない======================================== */
 .error {
     color: red;
     font-size: 14px;
@@ -54,5 +58,6 @@ button {
  }
 
  h2 {
-    font-size: 10px;
+    font-size: 12px;
  }
+

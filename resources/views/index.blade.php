@@ -3,8 +3,10 @@
 <x-layout>
     <h1>
         <span>Hello Laravel!</span>
-        <a href="{{ route('create.posts')}}">新規追加</a>
-        <a href="{{ route('seach.posts')}}">検索</a>
+        <div>
+            <a href="{{ route('create.posts')}}">新規追加</a>
+            <a href="{{ route('seach.posts')}}" class="seach">検索</a>
+        </div>
     </h1>
     <ul>
         @foreach ($posts as $post)

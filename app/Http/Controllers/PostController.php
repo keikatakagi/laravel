@@ -54,7 +54,12 @@ class PostController extends Controller
         return redirect()->route('index.posts');
     }
 
-    public function seach(){
-        return view('posts.seach');
+    public function seach(Request $request){
+        $title = $request->input('title');
+        $posts = Post::where('title', 'LIKE', "%$title%")
+        ->get();
+
+        return view('posts.seach',compact('posts', 'title'));
     }
+
 }
