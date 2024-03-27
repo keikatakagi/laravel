@@ -58,6 +58,19 @@ button {
  }
 
  h2 {
-    font-size: 12px;
+    font-size: 18px;
+    margin-top: 50px;
  }
 
+ .comment {
+    display: flex;
+ }
+
+ .comment button {
+    width: 90px;
+    height: 30px;
+ }
+
+ .dele {
+    display: inline-block;
+ }

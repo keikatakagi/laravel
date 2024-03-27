@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,11 @@ Route::delete('/posts/{id}/destroy',[PostController::class,'destroy'])
 
 Route::get('/posts/seach', [PostController::class,'seach'])
     ->name('seach.posts');
+
+Route::post('/posts/{id}/comments',[CommentController::class,'store'])
+    ->name('store.comments')
+    ->where('id','[0-9]+');
+
+Route::delete('/comments/{comment}/destroy',[CommentController::class,'destroy'])
+    ->name('destroy.comments')
+    ->where('id','[0-9]+');
